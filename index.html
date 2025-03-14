@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Talk</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 1; /* Damit der Text über dem Video liegt */
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        a {
+            font-size: 1.5rem;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            background-color: transparent;
+            border: 2px solid rgb(15, 15, 15);
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: auto;
+            height: 100%;
+            object-fit: cover; /* Damit das Video den gesamten Bildschirm ausfüllt, ohne verzerrt zu werden */
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="https://github.com/ShizoeID/body_background_mp4/blob/main/soul_cut.mp4?raw=true" type="video/mp4">
+    </video>
+    <div class="container">
+        <h1>Real Talk</h1>
+        <a href="https://github.com/ShizoeID/letter_img/blob/main/min_jung.png?raw=true" target="_blank">📩 Brief öffnen</a>
+    </div>
+</body>
+</html>
